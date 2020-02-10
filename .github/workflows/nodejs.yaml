@@ -32,9 +32,9 @@ jobs:
         run: |
           git config --global user.name "w-xuefeng"
           git config --global user.email "xuefeng@kcalb.wang"        
-          git clone ${GH_REF} blog-public
-          xcopy public blog-public /s /y       
-          cd blog-public
+          git clone ${GH_REF} blog
+          xcopy public blog /s /y       
+          cd blog
           git add .
           git commit -am "Deployed by GitHub Actions ..."
           git push origin master
