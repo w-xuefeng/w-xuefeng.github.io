@@ -27,14 +27,13 @@ jobs:
           copy CNAME public
 
       - name: 5. deploy 'public files'
-        env:
-          GH_REF: https://w-xuefeng:${{secrets.key}}@github.com/w-xuefeng/blog.git
         run: |
           git config --global user.name "w-xuefeng"
           git config --global user.email "xuefeng@kcalb.wang"    
           cd public
+          dir
           git init
+          git remote add origin https://w-xuefeng:${{secrets.key}}@github.com/w-xuefeng/blog.git
           git add .
-          git remote add origin ${GH_REF}
           git commit -am "Deployed by GitHub Actions ..."
           git push -u origin master -f
