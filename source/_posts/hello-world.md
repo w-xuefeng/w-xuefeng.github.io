@@ -1,38 +1,123 @@
 ---
-title: Hello World
+title: 多种语言输出Hello World
+date: 2017-06-27 22:05:15
+categories: 技术贴 | 总结类
+tags: start
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
-
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
+# C
+```c
+printf("Hello World");
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
+# C++
+```c++
+cout<<"Hello World";
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
+# QBasic 
+```qb
+Print "Hello World"
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
+# ASP
+```asp
+Response.Write "Hello World"
 ```
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+# PHP 
+```php
+echo "Hello World";
+```
+
+# JavaScript
+```javascript
+alert("Hello World");
+document.write("Hello World");
+```
+
+# VBScript
+```vbScript
+MsgBox "Hello World"
+```
+
+# Delphi
+```delphi
+ShowMessage('Hello World！');
+```
+
+# VB
+```vb
+Print "Hello World！"
+MessageBox("Hello World！");
+```
+
+# Shell 
+```shell
+echo Hello World
+```
+
+# Perl
+```perl 
+print 'Hello World'
+```
+
+# Java 
+```java
+System.out.println("Hello World");
+```
+
+# PowerBuilder:
+```powerBuilder:
+messagebox（"Hello World")
+```
+
+# <code>C#</code>
+```c#
+System.Console.WriteLine("Hello World")
+```
+
+# COBOL
+```cobol
+DISPLAY 'Hello World'
+```
+
+# Python
+```python
+print("Hello World")
+```
+
+# AS
+```as
+Alert.show("Hello World");
+```
+
+# Foxpro 
+```foxpro
+? [Hello World]
+```
+
+# DOS 批处理 
+```dos
+echo Hello World
+```
+
+# 易语言
+```易语言
+调试输出("Hello World"）
+```
+
+# Golang
+```golang
+fmt.Println("Hello World")
+```
+
+# Matlab
+```matlab
+disp('Hello,World!'');
+```
+
+# Ruby
+```ruby
+ puts "hello wold!"
+```
