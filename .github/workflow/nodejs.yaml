@@ -1,0 +1,22 @@
+name: Blog Deploy
+
+on: 
+  push:
+    branches: 
+      - dev
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Build and Deploy
+      uses: y4code/hexo-deploy-action@master
+      
+      env:
+        PERSONAL_TOKEN: ${{ secrets.key }}
+        PUBLISH_REPOSITORY: w-xuefeng/blog
+        BRANCH: master
+        PUBLISH_DIR: ./public
