@@ -28,7 +28,7 @@ jobs:
 
       - name: 5. deploy 'public files'
         env:
-          GH_REF: https://w-xuefeng:${{ secrets.key }}@github.com/w-xuefeng/blog
+          GH_REF: https://w-xuefeng:${{ secrets.key }}@github.com/w-xuefeng/blog.git
         run: |
           git config --global user.name "w-xuefeng"
           git config --global user.email "xuefeng@kcalb.wang"        
