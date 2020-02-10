@@ -28,14 +28,13 @@ jobs:
 
       - name: 5. deploy 'public files'
         env:
-          GH_REF: https://w-xuefeng:${{ secrets.key }}@github.com/w-xuefeng/blog.git
+          GH_REF: https://w-xuefeng:${{secrets.key}}@github.com/w-xuefeng/blog.git
         run: |
           git config --global user.name "w-xuefeng"
-          git config --global user.email "xuefeng@kcalb.wang"        
-          git clone ${GH_REF} blog
-          xcopy public blog /s /y       
-          cd blog
+          git config --global user.email "xuefeng@kcalb.wang"    
+          cd public
+          git init
           git add .
+          git remote add origin ${GH_REF}
           git commit -am "Deployed by GitHub Actions ..."
-          git push origin master
-
+          git push -u origin master -f
