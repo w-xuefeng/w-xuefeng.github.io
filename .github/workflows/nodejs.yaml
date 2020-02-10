@@ -7,16 +7,36 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: centos-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
+    runs-on: windows-latest
 
-    - name: Build and Deploy
-      uses: y4code/hexo-deploy-action@master
+steps:
+    - name: 1. git checkout...
+      uses: actions/checkout@v1
       
+    - name: 2. setup nodejs...
+      uses: actions/setup-node@v1
+    
+    - name: 3. install hexo...
+      run: |
+        npm install hexo-cli -g
+        npm install
+        
+    - name: 4. hexo generate public files...
+      run: |
+        npm run clean
+        npm run build
+        copy CNAME public
+
+    - name: 5. deploy 'public files'
       env:
-        PERSONAL_TOKEN: ${{ secrets.key }}
-        PUBLISH_REPOSITORY: w-xuefeng/blog
-        BRANCH: master
-        PUBLISH_DIR: ./public
+        GH_REF: https://w-xuefeng:${{ secrets.key }}@github.com/w-xuefeng/blog
+      run: |
+        git config --global user.name "w-xuefeng"
+        git config --global user.email "xuefeng@kcalb.wang"        
+        git clone ${GH_REF} blog-public
+        xcopy public blog-public /s /y       
+        cd hexo-public
+        git add .
+        git commit -am "Deployed by GitHub Actions ..."
+        git push origin master
+
