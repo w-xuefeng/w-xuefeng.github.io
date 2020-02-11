@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: 1. git checkout...
         uses: actions/checkout@v1
@@ -24,7 +24,7 @@ jobs:
         run: |
           npm run clean
           npm run build
-          copy CNAME public
+          cp ./CNAME ./public/CNAME
 
       - name: 5. deploy 'public files'
         run: |
