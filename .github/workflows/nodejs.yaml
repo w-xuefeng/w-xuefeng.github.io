@@ -28,12 +28,10 @@ jobs:
 
       - name: 5. deploy 'public files'
         run: |
-          git config --global user.name "w-xuefeng"
-          git config --global user.email "xuefeng@kcalb.wang"    
           cd public
-          dir
           git init
-          git remote add origin https://w-xuefeng:${{secrets.key}}@github.com/w-xuefeng/blog.git
+          git config user.name "w-xuefeng"
+          git config user.email "xuefeng@kcalb.wang"
           git add .
-          git commit -am "Deployed by GitHub Actions ..."
-          git push -u origin master -f
+          git commit -am "feat:auto update blog"
+          git push --force --quiet "https://${{secrets.key}}@github.com/w-xuefeng/blog.git" master:master
