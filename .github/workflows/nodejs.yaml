@@ -34,5 +34,5 @@ jobs:
           git config user.name "w-xuefeng"
           git config user.email "xuefeng@kcalb.wang"
           git add .
-          git commit -am "feat:auto update blog"
+          git commit -am "Feat: Github Action Auto Update Blog"
           git push --force --quiet "https://${{secrets.token}}@github.com/w-xuefeng/blog.git" master:master
