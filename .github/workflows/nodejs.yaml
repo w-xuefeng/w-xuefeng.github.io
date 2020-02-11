@@ -25,6 +25,7 @@ jobs:
           npm run clean
           npm run build
           cp ./CNAME ./public/CNAME
+          cp ./README.md ./public/README.md
 
       - name: 5. deploy 'public files'
         run: |
