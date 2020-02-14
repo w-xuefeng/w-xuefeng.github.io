@@ -34,6 +34,11 @@
                 <!-- Post Content -->
                 <%- partial('_partial/post-content') %>
 
+                <!-- Post Feeding -->
+                <% if(theme.feeding.enable !== false) { %>
+                    <%- partial('_partial/post-feeding') %>
+                <% } %>
+
                 <% if(page.hide_post_info !== true && theme.scheme === 'Isolation') { %>
                     <!-- Paradox Post Info -->
                     <%- partial('_partial/Isolation-post-info') %>
@@ -44,6 +49,8 @@
                     <%- partial('_partial/comment') %>
                 <% } %>
             </div>
+
+            
 
             <!-- Post Prev & Next Nav -->
             <%- partial('_partial/post-nav') %>

@@ -225,6 +225,12 @@ sidebar:
         feedback: false
         material: false
 
+feeding:
+    enable: false
+    qrcode:
+        ailpay: ""
+        wechat: ""
+
 
 # ---------------------------------------------------------------
 # Integrated Services

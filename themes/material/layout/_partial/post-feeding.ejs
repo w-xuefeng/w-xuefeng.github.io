@@ -1,0 +1,63 @@
+<style type="text/css">
+  .post-feeding,
+  .post-feeding-warp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .post-feeding {
+    flex-direction: column;
+  }
+  .post-feeding-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 10px;
+  }
+  .post-feeding-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .post-feeding-text span {
+    color: rgb(102, 165, 228);
+    text-align: center;
+  }
+  .post-feeding-text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<div class="post-feeding">
+  <% if(theme.feeding.enable) { %>
+    <div class="post-feeding-text">
+      <span>(●'◡'●)</span>
+      <div class="post-feeding-text-content">
+        <span>如果你觉得不错或者对你有帮助， </span>
+        <span>你可以替我买一杯咖啡 ☕</span>
+      </div>
+      <div class="post-feeding-text-content">
+        <span>If you think it's good or helpful,&nbsp;&nbsp;</span>
+        <span>you can buy me a cup of coffee ☕</span>
+      </div>
+    </div>
+    <div class="post-feeding-warp">
+      <% if(theme.feeding.qrcode.ailpay) { %>
+        <div class="post-feeding-item">
+          <img src="<%- theme.feeding.qrcode.ailpay %>" alt="buy me a coffce via ailpay" title="Buy me a coffce via Ailpay" width="100">
+          <span>Ailpay</span>
+        </div>
+      <% } %>
+      <% if(theme.feeding.qrcode.wechat) { %>
+        <div class="post-feeding-item">
+          <img src="<%- theme.feeding.qrcode.wechat %>" alt="buy me a coffce via wechat" title="Buy me a coffce via Wechat" width="100">
+          <span>Wechat</span>
+        </div>
+      <% } %>
+    </div>
+  <% } %>
+</div>
