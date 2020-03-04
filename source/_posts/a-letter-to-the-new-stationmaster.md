@@ -3,7 +3,7 @@ title: 致新任站长的一封信
 date: 2020-03-04 14:22:00
 categories: 阳光网站  | 一封信
 tags: letter
-thumbnail: 
+thumbnail: https://pub.wangxuefeng.com.cn/asset/blogthumbnail/a-letter-to-the-new-stationmaster/thumbnail.png
 ---
 
 # 致新任站长的一封信
