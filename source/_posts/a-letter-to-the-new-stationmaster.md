@@ -115,7 +115,7 @@ thumbnail: https://pub.wangxuefeng.com.cn/asset/blogthumbnail/a-letter-to-the-ne
 
 - 2019 年，创建了网站 Google 账号，主要用于网站系统的 GA (Google Analytics)，也可以使用 Google 的其他服务。
   
-  以上账号密码和 iYoungon 内部管理员账号密码都将由加密系统统一传承，详情地址将通过邮件发送的您的网站域名邮箱中。
+  以上账号密码和 iYoungon 内部管理员账号密码都将由加密系统统一传承，详情地址将通过邮件发送到您的网站域名邮箱中。
 
 ---
 
