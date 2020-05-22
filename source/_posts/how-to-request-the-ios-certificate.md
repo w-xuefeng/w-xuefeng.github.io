@@ -142,7 +142,7 @@ thumbnail: https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the
 - 开发推送证书选择 `Apple Push Notification service SSL (Sandbox)`
 - 发布推送证书选择 `Apple Push Notification service SSL (Sandbox & Production)`
 
-<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the-ios-certificate/1-4-serveice.png" width="50%" style="display:block;margin:0 auto;min-width: 280px">
+<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the-ios-certificate/1-4-service.png" width="50%" style="display:block;margin:0 auto;min-width: 280px">
 
 然后点击 `Continue`：
 
@@ -237,7 +237,7 @@ thumbnail: https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the
 
 <img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the-ios-certificate/5-3.png" width="50%" style="display:block;margin:0 auto;min-width: 280px">
 
-2020 年之后，需要在创建 应用 ID （App ID，Bundle ID） 的时候关联证书，创建 描述文件 的时候只需要选择要关联的应用 ID （App ID，Bundle ID）即可，无需再绑定证书
+从2020年春季开始，只有具有关联的部署描述的应用ID才有资格生成新的 In House 配置文件。
 
 <img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the-ios-certificate/5-3-nocer.png" width="50%" style="display:block;margin:0 auto;min-width: 280px">
 
