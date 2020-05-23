@@ -89,7 +89,7 @@ thumbnail: https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the
 
 <img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the-ios-certificate/0.png" width="50%" style="display:block;margin:0 auto;min-width: 280px">
 
-然后点击右上方钥匙串访问栏->证书助理->从证书颁发机构请求证书…
+然后点击上方钥匙串访问栏->证书助理->从证书颁发机构请求证书…
 
 <img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/how-to-request-the-ios-certificate/0-1.png" width="50%" style="display:block;margin:0 auto;min-width: 280px">
 
