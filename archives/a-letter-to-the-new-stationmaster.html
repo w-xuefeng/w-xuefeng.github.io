@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://xuefeng.disqus.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            致新任站长的一封信 | 
+        
+        boXue·Fengke
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/kcalb_logo_nobg.png">
+    <link rel="icon" href="/img/kcalb_logo_nobg.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",letter">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="boXue·Fengke">
+    <meta name="msapplication-starturl" content="https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="boXue·Fengke">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/kcalb_logo_nobg.png">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="google0da443a51f3ca324" />
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="致新任站长的一封信 | boXue·Fengke">
+    <meta property="og:image" content="/img/kcalb_logo_nobg.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="letter"> 
+
+    
+        <meta property="article:published_time" content="Wed Mar 04 2020 14:22:00 GMT+0000">
+        <meta property="article:modified_time" content="Sun Jun 13 2021 08:34:08 GMT+0000">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html",
+    "headline": "致新任站长的一封信",
+    "datePublished": "Wed Mar 04 2020 14:22:00 GMT+0000",
+    "dateModified": "Sun Jun 13 2021 08:34:08 GMT+0000",
+    "author": {
+        "@type": "Person",
+        "name": "w-xuefeng",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://pub.wangxuefeng.com.cn/asset/defaultHead/avatar.png"
+        },
+        "description": "不念过往 不畏将来"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "boXue·Fengke",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/kcalb_logo_nobg.png"
+        }
+    },
+    "keywords": ",letter",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-109928914-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-ghcolors.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#致新任站长的一封信"><span class="post-toc-number">1.</span> <span class="post-toc-text">致新任站长的一封信</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#新任站长："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">新任站长：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、社团定位"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">一、社团定位</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、Logo-释义"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">二、Logo 释义</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、网站文化"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">三、网站文化</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四、网站理念"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">四、网站理念</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五、网站生态"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">五、网站生态</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#六、网站账号"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">六、网站账号</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://pub.wangxuefeng.com.cn/asset/blogthumbnail/a-letter-to-the-new-stationmaster/thumbnail.png)">
+    
+            <p class="article-headline-p">
+                致新任站长的一封信
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://pub.wangxuefeng.com.cn/asset/defaultHead/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>w-xuefeng</strong>
+        <span>3月 04, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC20lEQVR42u3aQY7CQAwEQP7/6d0HIJbucViFmcoJiZC4fMCyPY+fI68HNjY2NjY2NjY29i3Zj/h6/tWr57y659Wdz/cn39YxY2NjY2/NfvPX/yfyVbhJKO3zRzFjY2NjH8BuMWvJyotWcmcSMzY2NjZ2G1zeSCStRZICbGxsbOx5g9GCk7HUTes2NjY29o3ZbRuQFKS1Z7akj8/SsLGxsW/PzsvSfT7/634bGxsb+8bs9spH/FF7UJbGUeTY2NjYm7LXxvR/l7f2kE170KddJ2BjY2PvzV4bDCX35wvdSXlLSiw2Njb2Oez2kE0eUNtUtAlK3oWNjY29K3uyAFhcuJbrh3l7g42NjX0auw29XSpMhkSjNGFjY2Nvyr4qxHaQlDcw7VBpcb+NjY2N/bXsthisrWCTsVGSpjZCbGxs7BPY7UgoH+tf1XhMVtHY2NjYJ7DbEJOk5EvitbVuW7qwsbGxT2AnzUOSpgSfJ2utuGJjY2Ofxp7zJqVrUkTb40TY2NjYp7HbsU7bQiTNQ/7eD87SsLGxsW/Pbo/OrC0GJk1Lntw3b8HGxsbelN22BGvIeTuRJw4bGxv7THYOLoY45bJhrSiODl9iY2Njb8ROUjBvWvJjl22LkqQbGxsbe1f2VYfX25LWLhLakjaapWFjY2N/ITsPpS1m+Yh/LZXF0hobGxt7a3benEwCWjt2c9UxIGxsbOxz2GtHG9sFQL76zde9b96IjY2NfQw7L2Brh+CTd+VH9otlAzY2Nvam7Ho0M14n5GOsaOifN0LY2NjYm7InJSEvQvnhnnxVkH/GxsbGPoG9NtbPwXmDsTbe+vhWBBsbG/tL2O3Ivh39ry2A2yTWBQwbGxv7SHbbJOSj/0lsb4Zf2NjY2NhLKciXwcnz25EWNjY29mnsdrnbLhXy4VTylssKGDY2NvYW7MngZtIwTIZW7W+xsbGxd2Wfc2FjY2NjY2NjY2Pf5voFbgvO4Z89mTsAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/letter/" rel="tag">letter</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=致新任站长的一封信&url=https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html&pic=https://blog.wangxuefeng.com.cn/img/kcalb_logo_nobg.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=致新任站长的一封信&url=https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html&via=w-xuefeng" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=boXue·Fengke&title=致新任站长的一封信&summary=&pics=https://blog.wangxuefeng.com.cn/img/kcalb_logo_nobg.png&url=https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="致新任站长的一封信"><a href="#致新任站长的一封信" class="headerlink" title="致新任站长的一封信"></a>致新任站长的一封信</h1><h2 id="新任站长："><a href="#新任站长：" class="headerlink" title="新任站长："></a>新任站长：</h2><p>您好！</p>
+<p>首先衷心的祝贺您担任本届天津商业大学阳光网站站长。<br>其次也非常高兴您能读到我的这封信，这封信是写给历届新任站长的。其目的是为了能够将网站历届以来积累的资源，培养的文化，发展的生态体系等一列非物质资产更好的传承给下一届，希望您能静下心来读完这封信。</p>
+<h2 id="一、社团定位"><a href="#一、社团定位" class="headerlink" title="一、社团定位"></a>一、社团定位</h2><p>阳光网站从 2001 年 5 月 7 日建站，截至到现在，已经逐渐成为一个成熟严谨且带有<code>工作性质</code>的校级社团, 并与校广播台、校报记者团、双微工作室共同成为校园四大媒体。</p>
+<p>围绕<strong>学校发展</strong>和<strong>学生成才</strong>，我们竭尽全力为师生创建一个交流思想，展示才华，促进成长的网络教育平台；坚持以建设在全国高校有一定影响力的思想教育主题网站为我们的主要<code>办站目标</code>。</p>
+<p>我们坚持 “互帮、互助、互敬、互让、互谅” 的<code>站风</code>，自觉承担网站工作，自愿为网站做出奉献。我们时刻牢记 “凝重、交流、服务、快捷” 的<code>办站方针</code>，在实践中体现 “以鲜明的主体进入网络，以科学的态度对待网络，以创新的精神运用网络，以规范的管理立足网络” 的<code>办站宗旨</code>。</p>
+<h2 id="二、Logo-释义"><a href="#二、Logo-释义" class="headerlink" title="二、Logo 释义"></a>二、Logo 释义</h2><p>阳光网站 logo <code>Youngon</code> 的释义:</p>
+<pre><code>1、Youngon 的发音在采取中西合璧，自造单词。可以读成“阳光”；
+2、logo 的标准色为蓝色，采用中英文组合的形式;
+3、Youngon 的 Y 字母通过抽象处理成一人型，以显出年青的阳光网站站员的精神面貌；
+4、Youngon 的 o 字母设计成太阳的形象，让人联想到阳光，同时组成人的大脑，寓示不断创新，一路前行；
+5、Youngon 可以看成四个单词：You-你、你们（指我们阳光站员，有似天外来音；Young-年轻（是我们做网站的主题）；go on-加油、奋进（象征我们的作风和精神）。这几个单词组合起来是：你们（很）年轻！你们（要）奋进！</code></pre><h2 id="三、网站文化"><a href="#三、网站文化" class="headerlink" title="三、网站文化"></a>三、网站文化</h2><p>网站始终遵循长辈带晚辈的教学模式，通过公开课、站内小课、布置作业、完成作业、讲解作业来指导教授知识技能和做人道理。这也是网站历届以来经过不断的探索，发现的最好的成长方式。</p>
+<p>自 2018 年开始，为提高网站影响力，推广网站文化，网站逐渐为每个部门建立了形象大使，开发部 <code>小You</code>，信息部 <code>小Young</code>, 企划部 <code>小樱</code> (待商榷), 运营部<code>小明</code> (待商榷), 并为它们建立了卡通形象（待商榷除外，由后届建立完成）。他们的人物性格如下:</p>
+<pre><code>小You，作为开发部的形象大使，果不其然的拥有着一个帅气的外表，青春年少，和大部分男孩子一样喜欢运动，最爱代码（来自指尖的灵魂舞蹈）和畅谈大千宇宙世界。
+
+小Young，信息部的萌萌哒形象大使，一个哪儿热闹就往哪凑，生活在哪都可以找到闪光点的美少女，喜欢着个性设计和头脑风暴，但更为摄影迷得神魂颠倒（不经意间又眼冒星光了），善解人意，爱笑多动耍刺激样样强。
+
+小樱 (待商榷，由后届建立完成)
+小明 (待商榷，由后届建立完成)</code></pre><h2 id="四、网站理念"><a href="#四、网站理念" class="headerlink" title="四、网站理念"></a>四、网站理念</h2><p>网站不仅仅是一社团，更是一个大家庭，每个部门又是一个小家庭。网站始终传承<code>家</code>的理念，网站的每个站员都是家庭里的一员，每当别人问起你在哪里时，“<code>我在站里</code>” 这句话便能脱口而出。</p>
+<p>既然是一个大家庭，那么当发生矛盾的时候，就要多站在对方的角度考虑问题，相互理解相互体谅，家庭和睦，社团才能繁荣发展。</p>
+<h2 id="五、网站生态"><a href="#五、网站生态" class="headerlink" title="五、网站生态"></a>五、网站生态</h2><p>为提高网站工作效率，推动网站技术发展，使网站能够在日新月异的现代互联网高速发展的今天不被淘汰，以及解决历届以来网站都存在的<code>内忧外患</code>，网站逐步建立自己的内部生态系统，并最终由内而外，发展外部生态系统，以达成最初的办站目标。</p>
+<ul>
+<li><p><code>iYoungon</code> 签到系统</p>
+<p>2016 年 5 月，阳光网站线上签到系统上线，截至现在，web 版已经进行了 3 次大版本更新，之后便又推出了 <code>iYoungon</code> Android APP, 并迭代与更新了多个版本，为解决 iOS 用户问题，推出了 <code>iYoungon</code> 微信小程序，现正处于第二个版本迭代周期中。</p>
+</li>
+<li><p><code>YG-Auth</code> 统一认证中心</p>
+<p>为解决多系统登录注册功能重复开发、多系统用户重复注册、网络信息不安全、用户管理不统一等问题，2019 年 3 月建立了阳光网站统一认证中心 <code>YG-Auth</code> 项目，该认证中心统一管理网站所有系统的用户。其他系统的登录注册都由该中心完成。</p>
+</li>
+<li><p><code>YG-Auth-Docking</code> 统一认证中心对接项目</p>
+<p>为解决阳光网站内部生态系统与统一认证中心的对接问题，2019 年 3 月，建立该项目。在该项目的基础上，新系统的开发将很容易对接到 <code>YG-Auth</code> 阳光网站统一认证中心。</p>
+</li>
+<li><p><code>YG-Dynamic</code> 动态空间</p>
+<p>2019 年 3 月，推出了阳光网站动态空间，旨在记录网站的每一次活动，和日常生活。多年以后，我们再回顾在阳光网站的这段时光，看着动态空间里的那些人，那些事儿，还能历历在目。</p>
+</li>
+<li><p><code>YG-Member</code> 历届站员名单</p>
+<p>为能够方便查找网站历届站员，2019 年 3 月，推出了<code>YG-Member</code> 历届站员名单项目，在该站点中，可以查看到 1998 级至现在所有站员包括各部门形象大使名单。其中 1998 级至 2013 级站员名单来自百度百科，2014 级至现在站员名单来自 iYoungon 系统数据库。因为在 2016 年 iYoungon 系统推出初期还处于灰度测试阶段，可能有部分 2014 级站员尚未注册，因此在该名单中，2014 级成员尚不完整。</p>
+</li>
+<li><p><code>YG-Join</code> 线上招新系统</p>
+<p>为简化招新流程和提高招新效率，2019 年 9 月，推出 <code>YG-Join</code> 线上招新系统。该系统中可填写简历，预览简历，投递简历。2020 年 1 月，已完善该系统的后台面试功能。后期会有新的招新系统推出。</p>
+</li>
+<li><p><code>YG-OA</code> 办公自动化系统</p>
+<p>为提高阳光网站工作效率，以及方便管理内部人员和活动，规范化工作流程，2019 年 4 月建立该项目，现在还处于开发阶段。该系统的开发分为多期。一期文档如下:</p>
+<ul>
+<li><a href="http://note.youdao.com/noteshare?id=b300819bab4aff800a50ad3cc7d5a660&sub=7C29EA6C6CC14445A255034298C2A9A5" target="_blank" rel="noopener">【一期】OA项目事宜</a></li>
+<li><a href="http://note.youdao.com/noteshare?id=a6846deb88377db99a2a27fbb79b6a31&sub=6924964E1CE44645B6312620A1FB96EF" target="_blank" rel="noopener">【一期】模块A-OA项目具体需求</a></li>
+<li><a href="http://note.youdao.com/noteshare?id=c34e6e90586720bab66111897bde9ef3&sub=E3C7A3FEDD1E486BAE77C606C2EE7322" target="_blank" rel="noopener">【一期】模块C-OA项目具体需求</a></li>
+<li><a href="http://note.youdao.com/noteshare?id=af33a78110cf63be646b8f8fc5413960&sub=4B943B6241174D07A3157CFA8C7C9D91" target="_blank" rel="noopener">【一期】模块D-OA项目具体需求</a></li>
+</ul>
+</li>
+<li><p><code>YG-Workstation</code> 作品站 | 工作站 （拟推出）</p>
+<p>为配合阳光网站通过公开课、站内小课、布置作业、完成作业、讲解作业的教授方式，将来拟推出 <code>YG-Workstation</code>作品站或称为工作站的系统，该系统中，部长或实习部长可布置作业，评价作业作品，选出优秀作业作品。站员可以接受作业，写作业，上传作业作品，查看作业作品。从网站复试到从网站换届退休，将会产生大量的作业和作品，该系统也将为站员统一管理自己散乱的作业和作品。只要服务器不爆炸，你的作业作品就不会丢！</p>
+</li>
+<li><p><code>YG-Sharing</code> 知音乐享（拟推出）</p>
+<p>为提高站员的个人能力，和找寻自己在某个领域的知音，将来拟推出<code>YG-Sharing</code> 知音乐享系统，在该系统里，站员可以分享自己在某一领域的研究成果，教程也好，文档也好，散文也好，随笔也好，只要对自己或对他人在某一方面能提高知识、或开阔眼界、或增长技能、或心情舒畅都是可以的。</p>
+<p>以上生态系统具体可在 Gitlab 中 Youngon Group 查看。阳光网站的内部生态建设需要网站的每个人共同努力才能完成，希望能够一直传承与接力下去。</p>
+<p><img src="https://pub.wangxuefeng.com.cn/asset/img/DeploymentDiagram.png" alt="YGECOS"></p>
+</li>
+</ul>
+<h2 id="六、网站账号"><a href="#六、网站账号" class="headerlink" title="六、网站账号"></a>六、网站账号</h2><ul>
+<li><p>2014年，网站创建了微信公众号和微博账号。</p>
+</li>
+<li><p>2018 年， 赵玮涵学长创建了阳光网站 BiliBili 账号。</p>
+</li>
+<li><p>2018 年，网站创建了今日校园公众号。</p>
+</li>
+<li><p>2019 年， 网站创建了官方 QQ 账号。最初建立这个官方帐号的目的是为了方便开发部的日常开发，与管理网站的域名邮箱。之后便是为了方便网站的一些小组，群的管理，也为了传承，统一由这个账号创建和管理网站的所有群。其次，可以加一些其他社团的负责人，比如四大媒体的负责人等，社团的联谊与活动都通过官方账号来进行，比起私人账号更加正式正规，而且也好传承。最后，当网站的自媒体平台发展到一定程度后，这个账号就可以加天商的其他人，可以像校园通表白墙一样，运营QQ空间，推广网站。</p>
+</li>
+<li><p>2019 年，创建了网站 Google 账号，主要用于网站系统的 GA (Google Analytics)，也可以使用 Google 的其他服务。</p>
+<p>以上账号密码和 iYoungon 内部管理员账号密码都将由加密系统统一传承，详情地址将通过邮件发送到您的网站域名邮箱中。</p>
+</li>
+</ul>
+<hr>
+<p>我们是一个充满想象力和创造力的，有足够的热情和活力的优秀团队，</p>
+<p>我们是一群渴望发展和创新图强的年轻人！</p>
+<p>我们有梦想，我们有毅力，我们有责任感！</p>
+<p>我们更有优良的工作环境，可以让我们不断施展自己的才华与技能！</p>
+<p>我们来自各个院系，不同的地方，</p>
+<p>我们有着不同的个性，拥有不同的人生，走着各自的路！</p>
+<p>但阳光网站把我们连接在一起！</p>
+<p>是她，让我们的大学生活更加多彩，更加充实……</p>
+<p>我们走到一起，为了共同的目标——建设属于天商师生自己最好的网站！</p>
+<p>我们不是在打工，我们要做网站的主人！</p>
+<p>我们不一定非要成名致富，但是我们渴望展现个人价值！</p>
+<p>我们渴望做得最好！我们追求飞跃！</p>
+<p>网站的未来属于你们，</p>
+<p>网站不仅是校园媒体，也不仅是工作室，</p>
+<p>更是所有站员的家。</p>
+<p>—————— 百度百科 《阳光网站》</p>
+<hr>
+<p>虽然 我们总是还没准备好要好好开始，就已经要面临结束，</p>
+<p>但是 我们经历了人生中最难以忘怀最丰富多彩的青春岁月，</p>
+<p>愿你大学四年不留遗憾，不念过往，不畏将来。</p>
+<p>以上。</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            本博客遵循<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank">署名-非商业性使用-相同方式共享 3.0 中国大陆 (CC BY-NC-SA 3.0 CN)</a>协议
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html">https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                <!-- Post Feeding -->
+                
+                    <style type="text/css">
+  .post-feeding,
+  .post-feeding-warp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .post-feeding {
+    flex-direction: column;
+  }
+  .post-feeding-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 10px;
+  }
+  .post-feeding-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .post-feeding-text span {
+    color: rgb(102, 165, 228);
+    text-align: center;
+  }
+  .post-feeding-text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<div class="post-feeding">
+  
+    <div class="post-feeding-text">
+      <span>(●'◡'●)</span>
+      <div class="post-feeding-text-content">
+        <span>如果你觉得不错或者对你有帮助， </span>
+        <span>你可以替我买一杯咖啡 ☕</span>
+      </div>
+      <div class="post-feeding-text-content">
+        <span>If you think it's good or helpful,&nbsp;&nbsp;</span>
+        <span>you can buy me a cup of coffee ☕</span>
+      </div>
+    </div>
+    <div class="post-feeding-warp">
+      
+        <div class="post-feeding-item">
+          <img src="https://pub.wangxuefeng.com.cn/feed/qrcode_onlyqr_feedme_ailpay.png" alt="buy me a coffce via ailpay" title="Buy me a coffce via Ailpay" width="100">
+          <span>Ailpay</span>
+        </div>
+      
+      
+        <div class="post-feeding-item">
+          <img src="https://pub.wangxuefeng.com.cn/feed/qrcode_onlyqr_feedme_wechat.png" alt="buy me a coffce via wechat" title="Buy me a coffce via Wechat" width="100">
+          <span>Wechat</span>
+        </div>
+      
+    </div>
+  
+</div>
+                
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #757575;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://blog.wangxuefeng.com.cn/archives/a-letter-to-the-new-stationmaster.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//xuefeng.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//xuefeng.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/archives/vaq.html" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/archives/2019self-summary.html" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://pub.wangxuefeng.com.cn/asset/defaultHead/avatar.png" alt="w-xuefeng's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        xuefeng@wangxuefeng.com.cn
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="https://www.wangxuefeng.com.cn" target="_blank" title="XueFeng&#39;s Home">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">person</i>
+                        
+                        XueFeng&#39;s Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="mailto: xuefeng@wangxuefeng.com.cn" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2021/06/">六月 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/01/">一月 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/03/">三月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/01/">一月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/SU%E5%B0%94%E4%B8%8D%E8%AE%A4%E8%BE%93-%E4%BA%A7%E5%93%81%E7%AF%87/">SU尔不认输 | 产品篇<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/SU%E5%B0%94%E4%B8%8D%E8%AE%A4%E8%BE%93-%E8%AF%BB%E4%B9%A6%E4%BC%9A/">SU尔不认输 | 读书会<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%85%B4%E8%B6%A3%E5%88%86%E4%BA%AB-%E9%9F%B3%E4%B9%90%E7%B1%BB/">兴趣分享 | 音乐类<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-iOS-%E5%BC%80%E5%8F%91/">技术贴 | iOS 开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E6%80%BB%E7%BB%93%E7%B1%BB/">技术贴 | 总结类<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">技术贴 | 数据结构<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E7%AE%97%E6%B3%95%E7%B1%BB/">技术贴 | 算法类<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E9%9D%A2%E8%AF%95%E9%A2%98/">技术贴 | 面试题<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%B5%81%E6%B0%B4%E8%B4%A6-%E6%80%BB%E7%BB%93%E7%B1%BB/">流水账 | 总结类<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%94%9F%E6%B4%BB%E7%BA%AA%E5%AE%9E-%E8%A7%86%E9%A2%91%E7%B1%BB/">生活纪实 | 视频类<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB-%E8%A7%86%E9%A2%91%E7%B1%BB/">知识分享 | 视频类<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%98%B3%E5%85%89%E7%BD%91%E7%AB%99-%E4%B8%80%E5%B0%81%E4%BF%A1/">阳光网站  | 一封信<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="时光之轴">
+                
+                    <i class="material-icons sidebar-material-icons">access_time</i>
+                
+                时光之轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="友情链接">
+                
+                    <i class="material-icons sidebar-material-icons">send</i>
+                
+                友情链接
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/XueFeng_W" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://plus.google.com/103648995569548189496" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+        <a href="https://weibo.com/feuxw" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/w-xuefeng/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/xue-feng-30-55/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;boXue·Fengke
+            
+                <br>
+                
+                    <a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow noopener" style="text-decoration: none;color: #9e9e9e;">陇ICP备16002668号-1</a><!-- Hotjar Tracking Code for blog.wangxuefeng.com.cn --> <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:1050089,hjsv:6}; a=o.getElementsByTagName("head")[0]; r=o.createElement("script");r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv="); </script>
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+        </body>
+    
+</html>

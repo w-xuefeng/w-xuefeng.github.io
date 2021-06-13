@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://xuefeng.disqus.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            使用 VAQ 开发移动端应用 | 
+        
+        boXue·Fengke
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/kcalb_logo_nobg.png">
+    <link rel="icon" href="/img/kcalb_logo_nobg.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",KnowledgeSharing,Vue,APICloud">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="boXue·Fengke">
+    <meta name="msapplication-starturl" content="https://blog.wangxuefeng.com.cn/archives/vaq.html">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="boXue·Fengke">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/kcalb_logo_nobg.png">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="google0da443a51f3ca324" />
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://blog.wangxuefeng.com.cn/archives/vaq.html">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="使用 VAQ 开发移动端应用 | boXue·Fengke">
+    <meta property="og:image" content="/img/kcalb_logo_nobg.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="KnowledgeSharing"> <meta property="og:article:tag" content="Vue"> <meta property="og:article:tag" content="APICloud"> 
+
+    
+        <meta property="article:published_time" content="Sun May 17 2020 12:54:15 GMT+0000">
+        <meta property="article:modified_time" content="Sun Jun 13 2021 08:34:08 GMT+0000">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://blog.wangxuefeng.com.cn/archives/vaq.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://blog.wangxuefeng.com.cn/archives/vaq.html",
+    "headline": "使用 VAQ 开发移动端应用",
+    "datePublished": "Sun May 17 2020 12:54:15 GMT+0000",
+    "dateModified": "Sun Jun 13 2021 08:34:08 GMT+0000",
+    "author": {
+        "@type": "Person",
+        "name": "w-xuefeng",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://pub.wangxuefeng.com.cn/asset/defaultHead/avatar.png"
+        },
+        "description": "不念过往 不畏将来"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "boXue·Fengke",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/kcalb_logo_nobg.png"
+        }
+    },
+    "keywords": ",KnowledgeSharing,Vue,APICloud",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-109928914-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-ghcolors.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                使用 VAQ 开发移动端应用
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://pub.wangxuefeng.com.cn/asset/defaultHead/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>w-xuefeng</strong>
+        <span>5月 17, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACeElEQVR42u3aQW7jMBAEQP//09kHeC13D0XGDkonI5BEFQOQgx4+fv709cDDw8PDw8PDw/sw3iO+np96/v2fwZ7ufH7n9Sj1t+Hh4eEd4b1Zai8Hvr4nGevVe4bfhoeHh3eQd71w58Mn7HaCiqfw8PDwPpL3qpxtF/H1cfHw8PC+kZcv/UlRjoeHh/ddvDyKvR5+Fm3kG8nGrAUPDw8v5uVNpvO/j/b38PDw8AJefaRpQ4zbNr3efCEeHh7eZl6+ELeBbAte+R48PDy8k7w8IGgL7nwzaIPduqTGw8PDu5XXDtO2vnJMPt1vnsXDw8PbzMsX3LzBn4cOyXvqL8TDw8M7wnv1ipW/r0e916PUKTUeHh7eTbw2rl1BJst9XnAPT0bg4eHh3crLI908gFgJI4ZNODw8PLzNvJyRU2dNtXyjqo8O4OHh4d3Kix6Iy+U2kkiK77pVhoeHh3eE9xNcbbk8a4nl2wYeHh7eb/FmpGiBHm0n+bZUhxF4eHh4G3izaDXfGFbwxeh4eHh4R3jtJ+ZHoKKWVbzxRMcR8PDw8DbzZsdG20K8ndBkOuqsBQ8PD28D764jBbNtZv1oAh4eHt5v8WZL/6yt1d4ZbTl4eHh4B3lJqNqWzkkjLQ9wo8gDDw8PbzOvvVYOEMxCivzfgIeHh3eGN2vP5xvJ7DhCS8LDw8M7z2sj2vYwQV6Ut8cLbm6A4eHh4Y2ODuQLdF5M58FxGxDj4eHhfRfvekHPt5OVScHDw8P7Lt5d7au2TB+GEXh4eHgbeEkYkS/Ts4m4fls0WXh4eHhHeG0EkBTN7Z23HTLAw8PD28z7exceHh4eHh4eHt4HXP8AxmPEcDYJB6YAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/APICloud/" rel="tag">APICloud</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/KnowledgeSharing/" rel="tag">KnowledgeSharing</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Vue/" rel="tag">Vue</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=使用 VAQ 开发移动端应用&url=https://blog.wangxuefeng.com.cn/archives/vaq.html&pic=https://blog.wangxuefeng.com.cn/img/kcalb_logo_nobg.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=使用 VAQ 开发移动端应用&url=https://blog.wangxuefeng.com.cn/archives/vaq.html&via=w-xuefeng" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.wangxuefeng.com.cn/archives/vaq.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.wangxuefeng.com.cn/archives/vaq.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=boXue·Fengke&title=使用 VAQ 开发移动端应用&summary=&pics=https://blog.wangxuefeng.com.cn/img/kcalb_logo_nobg.png&url=https://blog.wangxuefeng.com.cn/archives/vaq.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>使用 Hybrid 开发移动端应用，现在有例如 <code>Ionic</code>，<code>uni-app</code>，<code>APICloud</code> 等众多解决方案。其中 <code>Ionic</code> 最开始以 <code>Angular</code> 为开发框架，后来也实现了 <code>React</code> 和 <code>Vue</code> 的版本；<code>uni-app</code> 隶属于 <code>DCloud</code>，涉及 PC Web 端，各大小程序，移动端 APP 等，几乎包揽了整个大前端， 其生态发展也在日益扩大; <code>APICloud</code> 专注于<code>融合</code>, 将原生模块的功能以 <code>API</code> 的形式融合到前端开发中，提供了开发者无限扩展的空间。今天就主要以 <code>APICloud</code> 为例，介绍如何使用 VAQ （Vue-APICloud-Quickstart）开发移动端应用。</p>
+<p>阅读下文，需要如下前备知识：</p>
+<ul>
+<li>基础的前端开发知识</li>
+<li>使用 APICloud 开发 APP 的基础知识</li>
+<li>Vue.js 框架的基本使用</li>
+<li>知道 Typescript</li>
+</ul>
+<p>首先我们需要在 APICloud 平台控制台创建应用，配置好 “端设置” 和 “证书”, 在 “模块” 中选择自己要用到模块后，在 “自定义 loader” 中编译自定义 loader 并下载安装。</p>
+<p>然后我们在本地 使用 vue cli 创建一个新的 vue 项目，姑且命名为 vaq-project。<br>如果我们习惯于 ts 开发，则在创建项目的时候可以选择 <code>Typescript</code>。</p>
+<pre class=" language-bash"><code class="language-bash">vue create vaq-project</code></pre>
+<p>然后我们切入到项目下安装 VAQ 框架，</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> vaq-project
+vue add @w-xuefeng/apicloud</code></pre>
+<p>将会自动识别是否使用 <code>Typescript</code>，并生成对应的开发模版目录</p>
+<p>接着会提示我们输入一些信息，我们按照提示输入即可</p>
+<pre class=" language-bash"><code class="language-bash">? 请输入项目 ID <span class="token punctuation">(</span>Please enter the app <span class="token function">id</span> of your project<span class="token punctuation">)</span> A6000000000001
+? 请输入项目名称 <span class="token punctuation">(</span>Please enter the app name of your project<span class="token punctuation">)</span> vue-apicloud-template
+? 请输入项目描述 <span class="token punctuation">(</span>Please enter the description of your project<span class="token punctuation">)</span> A Vue.js APP with APICloud
+? 请输入项目作者 <span class="token punctuation">(</span>Please enter the author of your project<span class="token punctuation">)</span> @w-xuefeng/vue-cli-plugin-apicloud
+? 请输入运行项目的端口号，默认 8080 <span class="token punctuation">(</span>Please enter the port number of the running project, the default is 8080<span class="token punctuation">)</span> 8080</code></pre>
+<p>值得注意的是，APICloud 项目 ID 与 自定义 loader 的项目 ID 是一致的，否则无法进行 WiFi 调试。若 8080 端口已经被其他程序占用，我们应该输入一个新的未被占用的端口号。 安装完成后，如果要修改端口号，我们不仅要修改 package.json 中</p>
+<pre class=" language-json"><code class="language-json"><span class="token property">"serve"</span><span class="token operator">:</span> <span class="token string">"vue-cli-service serve --port 8080"</span></code></pre>
+<p>的端口号，还要修改 index.html 中 </p>
+<pre class=" language-js"><code class="language-js">url<span class="token punctuation">:</span> <span class="token string">'http://192.168.XX.XX:8080/indexindex.html'</span></code></pre>
+<p>中的端口号，然后重启项目并执行一次 WiFi 同步。同样的，在 WiFi 调试的时候，如果我们的本地 IP 发生了变化的话，需要修改 index.html 中 </p>
+<pre class=" language-js"><code class="language-js">url<span class="token punctuation">:</span> <span class="token string">'http://192.168.XX.XX:8080/indexindex.html'</span></code></pre>
+<p>中的 IP 地址，然后执行一次 WiFi 同步。</p>
+<p>安装完 VAQ 之后，项目的目录结构会发生变化，如下</p>
+<pre><code>.
+├── public                   # 静态资源
+│   ├── index.html           # 页面模板
+│   └── res                  # 静态资源
+├── src
+│   ├── pages                # 页面入口
+│   └── config               # 配置入口
+|       └── pages.json       # 页面配置
+├── index.html               # APP入口
+├── config.xml               # APICloud 项目配置文件
+├── .syncignore              # APICloud wifi 同步忽略文件
+├── ...
+└── package.json
+</code></pre><p>我们想要在 src/pages 目录下新建页面时，必须要在 src/config/pages.json 中配置相关参数才能生效。<br>查看默认的 <code>src/config/pages.json</code>, 会发现项目里有四个示例页面：</p>
+<pre class=" language-json"><code class="language-json"><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"开屏广告页"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"index"</span><span class="token punctuation">,</span>
+    <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"index/index"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"登录页"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"login"</span><span class="token punctuation">,</span>
+    <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"login/index"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"应用首页"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"home"</span><span class="token punctuation">,</span>
+    <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"home/index"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"web页面"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"web"</span><span class="token punctuation">,</span>
+    <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"home/web"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span></code></pre>
+<p>其中 <code>title</code> 是页面 HTML 文件的标题， <code>name</code> 是页面 <code>window</code> 或 <code>Frame</code> 的 <code>name</code>，<code>path</code> 是页面文件相对于 <code>src/pages</code> 目录的路径。我们可以修改或者删除默认页面的配置及对应文件夹下的页面文件，然后添加我们自己的页面。</p>
+<p>接下来我们启动项目, 看看示例页面。不过，在启动项目之前，值得我们注意的是，在 main.js 或 main.ts (如果创建项目的时候使用了 Typescript)中，有如下配置</p>
+<pre class=" language-js"><code class="language-js">Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VAQ<span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    pages<span class="token punctuation">,</span>
+    debugOnPC<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">!==</span> <span class="token string">'production '</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span> el<span class="token punctuation">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span> render<span class="token punctuation">:</span> h <span class="token operator">=</span><span class="token operator">></span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>其中 <code>pages</code> 便是上面的 <code>src/config/pages.json</code>, <code>debugOnPC</code> 则为是否在 PC端 调试的开关。众所周知，在 loader 和正式应用中, APICloud 会融合原生模块的功能到 <code>window.api</code> 中，而在 PC 端是没有 <code>api</code> 能力的。 所以当我们将 <code>debugOnPC</code> 设置为 <code>true</code> 时，我们仅仅只能在 PC 浏览器端调试样式和界面结构。如果我们不设置 <code>debugOnPC</code> 或者设置为<code>false</code> 时，PC 端将无法查看页面，这是因为 <code>new Vue()</code> 的操作被放到了 <code>apiready</code> 的回调中了，PC 端默认是没有 <code>apiready</code> 这个事件的。</p>
+<p>我们将 <code>debugOnPC</code> 设置为 <code>process.env.NODE_ENV !== &#39;production &#39;</code>，然后执行以下命令启动项目</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> run serve</code></pre>
+<p>我们首先在 PC 浏览器端查看示例界面，打开默认的地址<code>http://localhost:8080</code>，是页面导航页，如下图所示：</p>
+<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/vaq/1.png" width="100%">
+
+<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/vaq/2.png" width="100%">
+
+<p>该页面显示了我们项目中所有的页面配置，点击对应的页面则会跳转（若页面之间有参数传递，则通过页面导航打开将不会传递任何参数）。导航页面仅做为页面结构和样式调试时快速打开对应页面使用，自定义 Loader 中将不会展示本页面。</p>
+<ul>
+<li>默认的<code>开屏广告页</code></li>
+<li><code>path</code> 为 <code>index/index</code></li>
+<li>对应编译后的地址为<code>indexindex.html</code></li>
+<li>如下图所示</li>
+</ul>
+<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/vaq/3.png" width="100%">
+
+<ul>
+<li>点击屏幕中的按钮，将跳转到默认的<code>登录页</code></li>
+<li><code>path</code> 为 <code>login/index</code>，</li>
+<li>对应编译后的地址为<code>loginindex.html</code></li>
+<li>如下图所示</li>
+</ul>
+<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/vaq/4.png" width="100%">
+
+<ul>
+<li>根据提示输入用户名和密码，点击登录，将跳转到默认<code>应用首页</code></li>
+<li><code>path</code> 为 <code>home/index</code>，</li>
+<li>对应编译后的地址为<code>homeindex.html</code></li>
+<li>登录后退出应用再次打开，默认保留登录状态，将直接回到本页面</li>
+<li>如下图所示</li>
+</ul>
+<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/vaq/5.png" width="100%">
+
+<ul>
+<li>点击任意链接，在自定义 Loader 中将在新窗口打开而PC 浏览器将会直接跳转到默认的<code>web页面</code>，并载入网页链接内容</li>
+<li><code>path</code> 为 <code>home/web</code>，</li>
+<li>对应编译后的地址为<code>homeweb.html</code></li>
+<li>如下图所示</li>
+</ul>
+<img src="https://pub.wangxuefeng.com.cn/asset/blogthumbnail/vaq/6.png" width="100%">
+
+<p>以上便是所有默认示例页面的展示。示例页面仅仅是向开发者举例页面的开发方式，并不能用在正式项目中，所以开发者应将示例页面删除并新建自己项目的页面，或者直接修改为自己项目的页面。</p>
+<p>在 PC 端调试时，我们可以在浏览器中输入 <code>/webpack-dev-server</code> 查看编译后的文件目录结构, 默认如下所示</p>
+<pre><code>.
+├── js
+│   ├── chunk-vendors.js
+│   ├── indexindex.js
+│   ├── loginindex.js
+│   ├── homeindex.js
+│   └── homeweb.js
+├── index.html
+├── indexindex.html
+├── loginindex.html
+├── homeindex.html
+├── homeweb.html
+├── favicon.ico
+├── res
+│    └── img
+│         └── logo.png
+</code></pre><p>其中 index.html 为导航页面，仅用于 PC 浏览器端调试页面，Loader 调式和生成 Widget 时将会忽略该页面。</p>
+<p>关于具体开发问题，详见<a href="https://vaq.wangxuefeng.com.cn" target="_blank" rel="noopener">VAQ文档</a>。</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            本博客遵循<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank">署名-非商业性使用-相同方式共享 3.0 中国大陆 (CC BY-NC-SA 3.0 CN)</a>协议
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://blog.wangxuefeng.com.cn/archives/vaq.html">https://blog.wangxuefeng.com.cn/archives/vaq.html</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                <!-- Post Feeding -->
+                
+                    <style type="text/css">
+  .post-feeding,
+  .post-feeding-warp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .post-feeding {
+    flex-direction: column;
+  }
+  .post-feeding-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 10px;
+  }
+  .post-feeding-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .post-feeding-text span {
+    color: rgb(102, 165, 228);
+    text-align: center;
+  }
+  .post-feeding-text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<div class="post-feeding">
+  
+    <div class="post-feeding-text">
+      <span>(●'◡'●)</span>
+      <div class="post-feeding-text-content">
+        <span>如果你觉得不错或者对你有帮助， </span>
+        <span>你可以替我买一杯咖啡 ☕</span>
+      </div>
+      <div class="post-feeding-text-content">
+        <span>If you think it's good or helpful,&nbsp;&nbsp;</span>
+        <span>you can buy me a cup of coffee ☕</span>
+      </div>
+    </div>
+    <div class="post-feeding-warp">
+      
+        <div class="post-feeding-item">
+          <img src="https://pub.wangxuefeng.com.cn/feed/qrcode_onlyqr_feedme_ailpay.png" alt="buy me a coffce via ailpay" title="Buy me a coffce via Ailpay" width="100">
+          <span>Ailpay</span>
+        </div>
+      
+      
+        <div class="post-feeding-item">
+          <img src="https://pub.wangxuefeng.com.cn/feed/qrcode_onlyqr_feedme_wechat.png" alt="buy me a coffce via wechat" title="Buy me a coffce via Wechat" width="100">
+          <span>Wechat</span>
+        </div>
+      
+    </div>
+  
+</div>
+                
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #757575;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://blog.wangxuefeng.com.cn/archives/vaq.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://blog.wangxuefeng.com.cn/archives/vaq.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//xuefeng.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//xuefeng.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/archives/how-to-request-the-ios-certificate.html" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/archives/a-letter-to-the-new-stationmaster.html" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://pub.wangxuefeng.com.cn/asset/defaultHead/avatar.png" alt="w-xuefeng's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        xuefeng@wangxuefeng.com.cn
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="https://www.wangxuefeng.com.cn" target="_blank" title="XueFeng&#39;s Home">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">person</i>
+                        
+                        XueFeng&#39;s Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="mailto: xuefeng@wangxuefeng.com.cn" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2021/06/">六月 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/01/">一月 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/03/">三月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/01/">一月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/SU%E5%B0%94%E4%B8%8D%E8%AE%A4%E8%BE%93-%E4%BA%A7%E5%93%81%E7%AF%87/">SU尔不认输 | 产品篇<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/SU%E5%B0%94%E4%B8%8D%E8%AE%A4%E8%BE%93-%E8%AF%BB%E4%B9%A6%E4%BC%9A/">SU尔不认输 | 读书会<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%85%B4%E8%B6%A3%E5%88%86%E4%BA%AB-%E9%9F%B3%E4%B9%90%E7%B1%BB/">兴趣分享 | 音乐类<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-iOS-%E5%BC%80%E5%8F%91/">技术贴 | iOS 开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E6%80%BB%E7%BB%93%E7%B1%BB/">技术贴 | 总结类<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">技术贴 | 数据结构<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E7%AE%97%E6%B3%95%E7%B1%BB/">技术贴 | 算法类<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF%E8%B4%B4-%E9%9D%A2%E8%AF%95%E9%A2%98/">技术贴 | 面试题<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%B5%81%E6%B0%B4%E8%B4%A6-%E6%80%BB%E7%BB%93%E7%B1%BB/">流水账 | 总结类<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%94%9F%E6%B4%BB%E7%BA%AA%E5%AE%9E-%E8%A7%86%E9%A2%91%E7%B1%BB/">生活纪实 | 视频类<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB-%E8%A7%86%E9%A2%91%E7%B1%BB/">知识分享 | 视频类<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%98%B3%E5%85%89%E7%BD%91%E7%AB%99-%E4%B8%80%E5%B0%81%E4%BF%A1/">阳光网站  | 一封信<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="时光之轴">
+                
+                    <i class="material-icons sidebar-material-icons">access_time</i>
+                
+                时光之轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="友情链接">
+                
+                    <i class="material-icons sidebar-material-icons">send</i>
+                
+                友情链接
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/XueFeng_W" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://plus.google.com/103648995569548189496" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+        <a href="https://weibo.com/feuxw" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/w-xuefeng/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/xue-feng-30-55/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;boXue·Fengke
+            
+                <br>
+                
+                    <a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow noopener" style="text-decoration: none;color: #9e9e9e;">陇ICP备16002668号-1</a><!-- Hotjar Tracking Code for blog.wangxuefeng.com.cn --> <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:1050089,hjsv:6}; a=o.getElementsByTagName("head")[0]; r=o.createElement("script");r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv="); </script>
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+        </body>
+    
+</html>
