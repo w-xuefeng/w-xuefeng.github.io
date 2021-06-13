@@ -77,7 +77,7 @@ thumbnail: https://pub.wangxuefeng.com.cn/asset/blogthumbnail/standbyme/thumbnai
 
 かたく繋いだ手を離さないから
 不要放开紧紧相握的双手
-/* 卡大姑~ 组那~ 大带哦~  哈纳塞伊卡拉 */
+/* 卡大姑~ 组那~ 大带哦~  哈纳塞那伊卡拉 */
 
 ママの優しさと パパの泣き虫は
 妈妈的温柔和爸爸的爱哭
@@ -179,10 +179,10 @@ thumbnail: https://pub.wangxuefeng.com.cn/asset/blogthumbnail/standbyme/thumbnai
 
 かたく繋いだ手を離さないから
 不要放开紧紧相握的双手
-/* 卡大姑~ 组那~ 大带哦~  哈纳塞伊卡拉 */
+/* 卡大姑~ 组那~ 大带哦~  哈纳塞那伊卡拉 */
 
 離さないから
 不要放开
-/* 哈纳塞伊卡拉 */
+/* 哈纳塞那伊卡拉 */
 
 ```
